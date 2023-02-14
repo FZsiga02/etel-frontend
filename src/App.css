@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+#root {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+body {
+  background-image: url('https://previews.123rf.com/images/karandaev/karandaev1503/karandaev150300752/38103853-empty-plates-and-bowls-on-blue-wooden-background-top-view-with-copy-space.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}

@@ -71,12 +71,12 @@ class App extends Component<{}, State> {
   render() {
     const { etelNev, etelKaloria } = this.state;
 
-    return <div>
-      <h2>Új étel</h2><br />
-      Név: <input type="text" value={ etelNev } onChange={e => this.setState({ etelNev: e.currentTarget.value })} /><br />
+    return <div id='root'>
+      <h2>Új étel</h2>
+      Név: <input id='nev' type="text" value={ etelNev } onChange={e => this.setState({ etelNev: e.currentTarget.value })} /><br />
       Kalória: <input type="number" value={ etelKaloria } onChange={e => this.setState({ etelKaloria: parseInt(e.currentTarget.value) })} /><br />
       <button onClick={ this.handleRegister }>Felvétel</button><br />
-      <h2>Ételek listája</h2><br />
+      <h2>Ételek listája</h2>
       <ul>
         {
           this.state.etelek.map(etel => <li>{etel.nev}</li>)
